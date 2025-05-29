@@ -289,15 +289,42 @@ colmap gui
 ```
 
 ---
+## Results
 
+Results can be found here : https://drive.google.com/drive/folders/1Y0t8Z0K-NtN3TRaBAsJMMehzYb-bh0QN?usp=drive_link
+
+### Data Collection Phase
+
+![Data Collection](gif/data_collection.gif)
+
+This shows the trajectory execution and frame capture process during drone flight.
+
+---
+
+### Best Frames Selection
+
+![Best Frames](gif/best_frames.gif)
+
+This shows the ORB + FLANN-based optimal frame selection running onboard the drone.
+
+
+---
+
+### 3D Reconstruction Output
+
+![3D Reconstruction](gif/reconstruction.gif)
+
+This shows the final 3D sparse reconstruction result after running the COLMAP pipeline on the saved frames.
+
+---
 ## Folder Structure
 
 ```
 Final Colmap/
-├── best_frames/          # Saved .png frames from ROS2 node
-├── database.db           # COLMAP database
+├── best_frames/
+├── database.db
 └── sparse/
-    └── 0/               # Sparse 3D reconstruction output (including points3D.ply)
+    └── 0/
 ```
 
 ---
